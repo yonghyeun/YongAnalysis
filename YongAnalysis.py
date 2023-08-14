@@ -6,8 +6,6 @@ import seaborn as sns
 from scipy import stats
 from pprint import pprint
 import sys
-from colorama import Style, Fore
-import warnings
 
 
 class DataExploratioin:
@@ -51,8 +49,7 @@ class DataExploratioin:
             freq_value = self.result['Most Freq Value'].iloc[i]
 
             prop = np.mean(
-                np.array(self.data.loc[~self.data[col].isna(), col]
-                         == self.result['Most Freq Value'].iloc[i])
+                np.array(raw_data == freq_value)
             )
 
             prop_str = str(round(np.mean(prop) * 100, 1)) + '%'
@@ -75,4 +72,4 @@ class DataExploratioin:
 
         self.result = self.result.fillna('-')
 
-        return self.result, freq_prop
+        return self.result

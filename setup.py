@@ -8,7 +8,7 @@ setuptools.setup(
     version="0.0.1",
     author="Yonghyeun Choi",  # ex) Sunkyeong Lee
     author_email="ttddcc119@naver.com",
-    description="Analysis frame work",
+    description="Analysis framework",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/yonghyeun/YongAnalysis.git",
