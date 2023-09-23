@@ -7,6 +7,9 @@ from scipy import stats
 from pprint import pprint
 import sys
 import time 
+import warnings 
+
+warnings.filterwarnings(action = 'ignore')
 
 class DataExploratioin:
     '''
