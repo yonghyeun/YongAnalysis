@@ -9,7 +9,6 @@ import sys
 import time 
 import warnings 
 
-warnings.filterwarnings(action = 'ignore')
 
 class DataExploratioin:
     '''
@@ -22,6 +21,8 @@ class DataExploratioin:
 
     def __init__(self, data):
         self.data = data
+        warnings.filterwarnings(action = 'ignore')
+                
 
     def summarize(self):
         '''
